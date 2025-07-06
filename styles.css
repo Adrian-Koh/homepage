@@ -14,11 +14,28 @@ a {
     text-decoration: none;
 }
 
-#img-container {
-    grid-row: 1 / 4;
-    grid-column: 1 / 2;
-    width: fit-content;
-    margin-right: 20px;
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(161deg, rgb(0, 162, 255), rgb(0, 162, 255) 50%, white 50%, white);
+}
+
+.img-container {
+    margin: 20px;
+}
+
+.about-container {
+    background-color: white;
+    box-shadow: 0 0 3px 3px grey;
+    padding: 10px;
+    margin: 20px;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+    gap: 5px;
 }
 
 .portrait {
@@ -33,37 +50,50 @@ a {
     object-fit: cover;
 }
 
-header {
-    display: grid;
-    grid-template-columns: 320px 1fr;
-    justify-content: center;
-}
-
 body {
     width: 1000px;
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: 0 auto;
+    gap: 20px;
 }
 
 footer {
     display: flex;
     gap: 20px;
+    background-color: rgb(0, 162, 255);
+    color: white;
+    width: 100%;
+    justify-content: center;
+    padding: 20px;
+}
+
+footer p {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+footer .icon {
+    filter: invert(100%) sepia(4%) saturate(0%) hue-rotate(13deg) brightness(119%) contrast(100%);
 }
 
 .work-screenshot {
-    width: 100%;
-    height: auto;
+    width: 300px;
+    height: 220px;
+    object-fit: contain;
 }
 
 .work-title-row {
     display: flex;
     align-items: center;
+    width: 100%;
 }
 
 .project-github {
     margin-left: auto;
+    margin-right: 5px;
 }
 
 .project-link {
@@ -77,4 +107,11 @@ footer {
 
 .project-description {
     margin: 10px;
+}
+
+.work-card {
+    box-shadow: 0 0 3px 3px grey;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
