@@ -147,6 +147,20 @@ footer .icon {
         width: 100%;
     }
 
+    header {
+        display: block;
+    }
+
+    .img-container {
+        float: left;
+        margin: max(20px, 3vw);
+    }
+
+    .about-container {
+        width: calc(100% - 300px);
+        margin: 60px auto;
+    }
+
     .works-grid {
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(3, 1fr);
@@ -168,7 +182,9 @@ footer .icon {
 
 @media (max-width: 600px) {
     header {
+        display: flex;
         flex-direction: column;
+        align-items: center;
     }
 
     .footer-image {
@@ -181,6 +197,7 @@ footer .icon {
     }
     .about-container {
         margin: 5px;
+        width: 80vw;
     }
 
     .works-grid {
