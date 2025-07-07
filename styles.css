@@ -55,7 +55,7 @@ header {
 }
 
 .section-title {
-    margin: 0 0 10px 0;
+    margin: 0 0 20px 0;
 }
 
 nav {
@@ -122,7 +122,7 @@ footer .icon {
 
 .work-title {
     margin: 10px 10px;
-    font-weight: 500;
+    font-weight: 700;
 }
 
 .project-description {
